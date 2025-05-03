@@ -1,0 +1,373 @@
+/* Tausta*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2f4fa98;
+
+}
+
+/*nappi*/
+.button {
+    background-color: #07627e;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    /* Aktivoi flexbox-asettelun */
+    justify-content: center;
+    /* Keskittää nappin vaakasuunnassa */
+    /*(EI TARVI?) align-items: center;*/
+    /* Keskittää nappin pystysuunnassa (jos tarpeen) */
+}
+
+/*navigaatio*/
+header {
+    font-size: 23px;
+
+}
+
+/*(toistaiseksi ei käytössä)
+.brandinimi {
+    font-size: 28px;
+    color: #ffffff;
+    background-color: rgb(7, 98, 126);
+}*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: none;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(7, 98, 126);
+    /*(vanhaväri) ei käytössä
+    background-color: #04AA6D;*/
+}
+
+/*fontit*/
+/*@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+/*Otsikoita*/
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 30px;
+}
+
+/*pääotsikot ja tekstit header*/
+.header1 h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.header1 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 150px 10px 150px 10px;
+
+}
+
+.header1 {
+    padding: 50px;
+}
+
+.header2 h1 {
+    color: white;
+    font-size: 40px;
+
+}
+
+.header2 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 10px 150px 10px
+}
+
+.header2 {
+    padding: 20px;
+}
+
+
+
+/*sivuotsikot*/
+/*h2 {
+    color: black;
+    font-family: Tahoma;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-family: Tahoma;
+}*/
+
+#yhteys {
+    text-align: left;
+    font-size: 25px;
+}
+
+/*kappaleet*/
+p {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: Tahoma;
+}
+
+.lead {
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(7, 98, 126);
+    padding: 1px 0px 1px 0px;
+
+
+}
+
+footer p {
+    color: #ffffff;
+}
+
+#footermail {
+    color: white;
+}
+
+
+/*taulukko*/
+table {
+
+    font-family: Tahoma;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #817e7e;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* div elementti
+div {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}*/
+
+/*pääotsikko kuva*/
+.header1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("manonasailboat.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+    background-color: #f3deb7;
+}
+
+.content2 {
+    width: 90%;
+    padding: 3%;
+    margin: 5% auto;
+    background-color: #f3deb7;
+}
+
+.content img {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/*
+.quote1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+.quote2 {
+    /*font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;*/
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(7, 98, 126);
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+    color: white;
+}
+
+.quote3 {
+    /*font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;*/
+    text-align: center;
+    font-size: 40px;
+    /*background-color: rgb(7, 98, 126);*/
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+    color: black;
+
+}
+
+#sitaatti {
+    margin: 10%;
+}
+
+#viittaus {
+    font-size: 15px;
+
+}
+
+/* (ei tarvita isossa ruudussa)Clear floats after the columns 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+.column {
+    padding: 0px 0px 70px 0px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media screen and (min-width: 600px) {
+
+    .content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .content2 {
+        width: 70%;
+        margin: 5% auto;
+    }
+
+
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .quote2 {
+        width: 70%;
+
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .content {
+        width: 65%;
+        margin: auto;
+    }
+
+    .content2 {
+        width: 65%;
+        margin: 5% auto;
+    }
+
+    .column {
+        float: left;
+        width: 32.4%;
+        margin: 3px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+
+    .quote2 {
+        width: 65%;
+
+    }
+
+}
