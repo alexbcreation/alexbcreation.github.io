@@ -105,10 +105,7 @@ h3 {
 .header1 h1 {
     color: white;
     font-size: 35px;
-
-
-
-
+    word-wrap: break-word;
 }
 
 .header1 p {
@@ -116,6 +113,7 @@ h3 {
     font-size: 25px;
     text-align: center;
     padding: 150px 10px 150px 10px;
+    word-wrap: break-word;
 
 }
 
@@ -126,6 +124,7 @@ h3 {
 .header2 h1 {
     color: white;
     font-size: 40px;
+    word-wrap: break-word;
 
 }
 
@@ -133,7 +132,8 @@ h3 {
     color: white;
     font-size: 30px;
     text-align: center;
-    padding: 15px 10px 150px 10px
+    padding: 15px 10px 150px 10px;
+    word-wrap: break-word;
 }
 
 .header2 {
@@ -219,19 +219,19 @@ div {
 
 /*pääotsikko kuva*/
 .header1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("manonasailboat.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("manonasailboat.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .header2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .header3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("veneilymaisema.jpg");
     background-position: center;
     background-size: cover;
 }
