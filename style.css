@@ -84,6 +84,7 @@ h3 {
     text-align: center;
     font-family: Georgia;
     font-size: 30px;
+    word-wrap: break-word;
 }
 
 h3 {
@@ -96,10 +97,15 @@ p {
     font-size: 20px;
     padding: 5px;
     font-family: Tahoma;
+    word-wrap: break-word;
 }
 
 .lead {
     font-size: 25px;
+}
+
+#keskitetty {
+    text-align: center;
 }
 
 /*Alatunnisteen määrityksiä*/
@@ -125,12 +131,15 @@ footer p {
     word-wrap: break-word;
 }
 
+/**/
+
 .header1 p,
-.header2 p {
+.header2 p,
+.johdatus {
     color: white;
     font-size: 25px;
     text-align: center;
-    padding: 80px 10px 80px 10px;
+    padding: 50px 10px 50px 10px;
     word-wrap: break-word;
 }
 
@@ -146,6 +155,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     font-size: 20px;
+
 }
 
 td,
@@ -177,7 +187,9 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-/*Kuva elementtien määrityksiä*/
+/*Kuva elementtien määrityksiä.
+HTML-koodiin kuville määritetty sivua ladattaessa tilavaraukset,
+mutta varsinainen skaalautuvuus määritellään tässä*/
 .content img {
     width: 100%;
     max-width: 800px;
@@ -243,10 +255,18 @@ iframe {
     border: 0;
 }
 
+/*Responsiivisuus määrityksiä alle 310px näytölle*/
+@media screen and (max-width: 310px) {
+
+    table {
+        font-size: 10px;
+    }
+}
+
 /*Responsiivisuus määrityksiä isommille näytöille,
 määrityksien kommentoinnit löytyvät mobiili -puolelta*/
 
-/*Tablettikoosta ylös*/
+/*Tablettikoosta ylös, yli 768px*/
 @media screen and (min-width: 768px) {
 
     .header1 h1,
@@ -255,9 +275,10 @@ määrityksien kommentoinnit löytyvät mobiili -puolelta*/
     }
 
     .header1 p,
-    .header2 p {
+    .header2 p,
+    .johdatus {
         font-size: 30px;
-        padding: 150px 10px 150px 10px;
+        padding: 100px 10px 100px 10px;
     }
 
     .content,
@@ -276,7 +297,7 @@ määrityksien kommentoinnit löytyvät mobiili -puolelta*/
     }
 }
 
-/*Iso näyttö*/
+/*Iso näyttö yli 1024px*/
 @media screen and (min-width: 1024px) {
 
     .content,
